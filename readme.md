@@ -66,6 +66,20 @@ An AI-powered blog generator that uses AWS Bedrock’s LLaMA3-70B-instruct model
     "message": "Content successfully generated and uploaded."
   }
   ```
+## 🔐 Authentication Setup (Safe Usage)
+
+To run this project securely, you must configure AWS credentials properly. **Never hardcode keys or commit them to GitHub.**
+
+### 🔧 Step 1: Create a `.env` file
+
+Copy the template below into a `.env` file in your project root:
+
+```env
+AWS_ACCESS_KEY_ID=your-access-key-id
+AWS_SECRET_ACCESS_KEY=your-secret-access-key
+AWS_DEFAULT_REGION=us-east-1
+S3_BUCKET_NAME=your-s3-bucket-name
+MODEL_ID=your-model-id  # Example: us.meta.llama3-3-70b-instruct-v1:0
 
 ## **License**
 
